@@ -10,13 +10,13 @@ server.use(express.json())
 // configure express-session middleware
 server.use(
   session({
-    name: 'webauth1', // default is connect.sid
+    name: 'webauth1', // default=connect.sid
     secret: 'shhhhh.supersecret!!!',
     cookie: {
       maxAge: 1 * 24 * 60 * 60 * 1000,
-      secure: false // only set cookies over https. Server will not send back a cookie over http.
+      secure: false
     },
-    httpOnly: true, // don't let JS code access cookies. Browser extensions run JS code on your browser!
+    httpOnly: true,
     resave: false,
     saveUninitialized: false
   })
@@ -24,7 +24,6 @@ server.use(
 
 server.use('/api/users', users)
 server.use('/api/auth', auth)
-
 server.get('/', (req, res, next) => {
   res.send(`API Server is running!`)
 })
