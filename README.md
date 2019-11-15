@@ -1,6 +1,7 @@
 # Web Auth API
+![alt text](https://www.eweek.com/imagesvr_ez/b2bezp/2019/02/Red.Lambda.jpg "Red Lambda Logo")
 
-This app implement user management, including user registrating and login, as well as session management using cookies. The API works as follows:
+This information and data management app implements user management, including user registrating and login, as well as session management using cookies. The API works as follows:
 
 | Method | Endpoint      | Description                                                                                                                                                                                                                                                                                 |
 | ------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
