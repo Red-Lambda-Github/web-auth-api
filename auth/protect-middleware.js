@@ -1,4 +1,4 @@
-function protected(req, res, next) {
+function protect(req, res, next) {
   if (req.session && req.session.userId) {
     next()
   } else {
@@ -6,4 +6,5 @@ function protected(req, res, next) {
   }
 }
 
-module.exports = protected
+module.exports = protect;
+
