@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "test": "jest NODE_ENV=testing --watch --verbose"
+    "test": "jest DB_ENV=testing --watch --verbose"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
