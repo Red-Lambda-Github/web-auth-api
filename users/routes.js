@@ -1,6 +1,6 @@
 const express = require('express')
 const db = require('../data/dbConfig.js')
-const protect = require('../auth/protect-middleware.js/index.js')
+const protect = require('../auth/protect-middleware.js')
 
 const router = express.Router()
 
